@@ -1,5 +1,4 @@
 pipeline {
-
     agent any
 
     stages {
@@ -20,7 +19,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
+                echo 'Deploying Java web application...'
                 echo 'Deployment completed successfully!'
             }
         }
@@ -35,4 +34,4 @@ pipeline {
             echo 'CI/CD Pipeline failed!'
         }
     }
-}mvn test
+}
